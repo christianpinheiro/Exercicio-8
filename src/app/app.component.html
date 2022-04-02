@@ -1,7 +1,12 @@
-<h1>Exercício 08</h1>
-
-
-<hr />
+<h1>Exercício 08</h1> 
 
 <p><b>Aluno:</b> Christian Alves Pinheiro</p>
 <p><b>Ra:</b> 0050831911005</p>
+<p><b>Temporizador:</b> {{ timer.getCount() }}</p>
+
+<hr />
+<a [routerLink]="['disc']">Disciplinas </a> |
+<a [routerLink]="['timer']">Timer</a>
+
+<router-outlet></router-outlet>
+

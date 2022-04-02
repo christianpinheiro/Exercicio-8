@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { TimerService } from './timer.service';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,9 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+
+  constructor(public timer: TimerService) {
+    this.timer.start(1000);
+  }
   
 }

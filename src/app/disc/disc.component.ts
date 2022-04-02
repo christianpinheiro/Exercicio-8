@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DiscService } from '../disc.service';
 
 @Component({
   selector: 'app-disc',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscComponent implements OnInit {
 
-  constructor() { }
+  constructor(public disciplinas: DiscService, public disc: DiscService) { }
 
   ngOnInit() {
   }

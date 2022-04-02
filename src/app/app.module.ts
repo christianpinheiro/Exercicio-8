@@ -12,7 +12,6 @@ import { TimerService } from './timer.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot([
-    {path: '', component: AppComponent},
     {path: 'disc', component: DiscComponent},
     {path: 'timer', component: TimerComponent},    
   ])
