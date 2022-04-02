@@ -7,11 +7,10 @@ import { TimerService } from '../timer.service';
   styleUrls: ['./timer.component.css'],
 })
 export class TimerComponent implements OnInit {
-  v: number;
+
 
   constructor(public timer: TimerService) {
 
-    this.v = 0;
     
   }
 
