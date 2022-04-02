@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
 
 
-
 @Injectable()
 export class TimerService {
   private timer: any;
   private counter = 0;
+  v: number;
   
 
   constructor() {  
-    
+    this.v = 0;
   }
 
   start(ms: number) {
     if (!this.timer) {
       this.timer = setInterval(() => {
+        
         this.counter++;
       }, ms);
     }
@@ -31,7 +32,7 @@ export class TimerService {
     if (this.timer != 0) this.counter = 0;
   }
 
-  getCount(intervalo: number) {
+  getCount() {
     return this.counter;
   }
 }

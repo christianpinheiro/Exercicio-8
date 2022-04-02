@@ -4,7 +4,6 @@
 
 <div>
   <input type="number" min="1" value="0" [(ngModel)]="intervalo" />
-  <button (click)="timer.getCount(intervalo)">Aplicar</button>
 </div>
 
 <br />
@@ -13,4 +12,4 @@
 <button (click)="timer.reset()">Zerar</button>
 
 <br />
-<p><b>Temporizador:</b> {{ timer.getCount(intervalo) }}</p>
+<p><b>Temporizador:</b> {{ timer.getCount() }}</p>
