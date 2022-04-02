@@ -1,5 +1,13 @@
 <br><br>
 
 <h3>Controlar Temporizador</h3>
+<br>
+
+<h4>Digite um intervalo para o temporizador:</h4>
+ <input type = "number" step = "1" min = "0" [(ngModel)]="intervalo"/>
+ <button (click)="counter=intervalo">Aplicar</button>
+
+<br><br>
 <button (click)="timer.start(1000)">Iniciar</button>
 <button (click)="timer.stop()">Parar</button>
+<button (click)="timer.reset()">Zerar</button>

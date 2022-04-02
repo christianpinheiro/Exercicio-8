@@ -5,7 +5,7 @@ export class TimerService {
   private timer: any;
   private counter = 0;
 
-  constructor() { }
+  constructor() {}
 
   start(ms: number) {
     if (!this.timer) {
@@ -14,15 +14,19 @@ export class TimerService {
       }, ms);
     }
   }
+
   stop() {
     if (this.timer) {
       clearInterval(this.timer);
       this.timer = null;
     }
   }
+
+  reset() {
+    if (this.timer != 0) this.counter = 0;
+  }
+
   getCount() {
     return this.counter;
   }
-
 }
-

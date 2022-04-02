@@ -8,7 +8,14 @@ import { TimerService } from '../timer.service';
 })
 export class TimerComponent implements OnInit {
 
-  constructor(public timer: TimerService) { }
+  intervalo: number;
+  counter: number;
+
+  constructor(public timer: TimerService) { 
+
+ 
+
+  }
 
   ngOnInit() {
   }
