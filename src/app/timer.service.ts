@@ -5,11 +5,11 @@ export class TimerService {
   private timer: any;
   private counter = 0;
 
-  constructor() {}
+  constructor() {  }
 
   start(ms: number) {
     if (!this.timer) {
-      this.timer = setInterval(() => {
+      this.timer = setInterval((intervalo) => {
         this.counter++;
       }, ms);
     }
