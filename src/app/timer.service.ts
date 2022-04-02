@@ -1,15 +1,22 @@
 import { Injectable } from '@angular/core';
 
+interface Intervalo{
+  v: number;
+}
 
 @Injectable()
 export class TimerService {
   private timer: any;
   private counter = 0;
-  v: number;
+  intervalo: number;
   
 
   constructor() {  
-    this.v = 0;
+
+  }
+
+  getIntervalo() {
+    return this.intervalo;
   }
 
   start(ms: number) {
