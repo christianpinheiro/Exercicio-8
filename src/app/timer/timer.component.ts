@@ -7,12 +7,14 @@ import { TimerService } from '../timer.service';
   styleUrls: ['./timer.component.css'],
 })
 export class TimerComponent implements OnInit {
-  intervalo: number;
+  v: number;
 
   constructor(public timer: TimerService) {
 
+    this.v = 0;
     
   }
 
   ngOnInit() {}
+
 }
