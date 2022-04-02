@@ -9,11 +9,8 @@ import { TimerService } from '../timer.service';
 export class TimerComponent implements OnInit {
 
   intervalo: number;
-  counter: number;
 
   constructor(public timer: TimerService) { 
-
- 
 
   }
 

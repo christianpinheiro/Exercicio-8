@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable()
 export class TimerService {
   private timer: any;
@@ -25,6 +26,11 @@ export class TimerService {
   reset() {
     if (this.timer != 0) this.counter = 0;
   }
+
+  aplicar(){
+    
+  }
+ 
 
   getCount() {
     return this.counter;
