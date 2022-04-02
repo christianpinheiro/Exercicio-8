@@ -9,7 +9,7 @@ import { TimerService } from './timer.service';
 export class AppComponent  {
 
   constructor(public timer: TimerService) {
-    this.timer.start(1000);
+
   }
   
 }

@@ -7,11 +7,9 @@
 
 <div>
 <input type = "number" step = "1" min = "0" [(ngModel)]="intervalo"/>
-<button (click)="timer.start(1000)">Aplicar</button>
-
 </div>
 
-<br><br>
+<br>
 <button (click)="timer.start(1000)">Iniciar</button>
 <button (click)="timer.stop()">Parar</button>
 <button (click)="timer.reset()">Zerar</button>
